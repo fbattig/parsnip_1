@@ -25,7 +25,7 @@ const mockTasks = [
     id: 4,
     title: 'Learn Tableau',
     description: 'BI..',
-    status: 'Unstarted'
+    status: 'In Progress'
   }
 ]
 

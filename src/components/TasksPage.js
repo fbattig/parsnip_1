@@ -15,9 +15,11 @@ class TasksPage extends Component {
   }
   render() {
     return (
-      <div>
-    {this.renderTaskLists()}
-      </div>
+      <div className='tasks'>
+      <div className='task-lists'>
+           {this.renderTaskLists()}
+        </div>
+        </div>
     )
   }
 }
