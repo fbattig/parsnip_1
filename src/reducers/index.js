@@ -27,6 +27,20 @@ const mockTasks = [
     description: 'BI..',
     status: 'In Progress',
     level: 'hard'
+  },
+  {
+    id: 5,
+    title: 'Learn Silverlight',
+    description: 'BI..',
+    status: 'Cancelled',
+    level: 'hard'
+  },
+  {
+    id: 6,
+    title: 'Learn SSMS',
+    description: 'BI..',
+    status: 'Cancelled',
+    level: 'hard'
   }
 ]
 
