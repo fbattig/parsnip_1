@@ -4,7 +4,12 @@ const Task = (props) => {
   return (
     <div className="task">
     <div className="task-header">
-    <div>{props.task.title}</div>
+        <div>{props.task.title}</div>
+        <select>
+          <option>3</option>
+          <option>1</option>
+          <option>1</option>
+        </select>
     </div>
     <hr />
 <div className="task-body">{props.task.description}</div>
