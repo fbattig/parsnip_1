@@ -23,10 +23,17 @@ class TasksPage extends Component {
     //const LEVELS = [...new Set(tasks.map(item => item.level))];
     return TASK_STATUSES.map(status => {
       const statusTasks = tasks.filter(task => task.status === status);
-      return <TaskList key={status} status={status} tasks={statusTasks} />;
+      return <TaskList
+        key={status}
+        status={status}
+        tasks={statusTasks}
+        statuses={TASK_STATUSES}
+        onStatusChange={this.props.onStatusChange}
+      />;
     });
   }
 
+ 
   toggleForm = () => {
     this.setState({ showNewCardForm: !this.state.showNewCardForm });
   };

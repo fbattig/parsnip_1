@@ -15,3 +15,12 @@ export function createTask({ title, description }) {
     }
   }
 }
+export function editTask( id, params = {}) {
+  return {
+    type: 'EDIT_TASK',
+    payload: {
+      id: id,
+      params
+    }
+  }
+}
